@@ -2,7 +2,7 @@ import User from "../model/User.js";
 import twilio from "twilio";
 
 
-export const signup = async (req, res) => {
+export const contactUs = async (req, res) => {
     try {
       const { FullName, email,mobile,message,services ,company} = req.body;
   
