@@ -1,10 +1,11 @@
 import express from "express";
 import mongoose from "mongoose";
 import UserRouter from "./routes/UserRouter.js";
+import bodyParser from "body-parser";
 const app = express();
  
 app.use(express.json());
-
+app.use(bodyParser.json());
 app.use("/user", UserRouter);
 mongoose
   .connect(

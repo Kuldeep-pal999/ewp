@@ -1,11 +1,11 @@
 import express from 'express';
-import  { contactUs }  from '../controllers/userController.js';
+import  { contactUs , sendemail}  from '../controllers/userController.js';
 
 const UserRouter = express.Router();
 
 
   UserRouter.post('/contactUs',contactUs);
-  //UserRouter.post('/submit',submit);
+  UserRouter.post('/sendemail',sendemail);
 
   export default UserRouter;
   
